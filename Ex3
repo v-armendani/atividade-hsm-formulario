@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações de Restaurantes</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <form action="#!" method="POST">
+            <h2>Lista de recomendações de restaurantes</h2>
+            <br>
+            <fieldset> 
+                <legend>&nbsp SOBRE O RESTAURANTE &nbsp</legend>
+                <div class="input-base">
+                    <label for="estabelecimento" class="tds">Nome do Estabelecimento:</label>
+                    <input id="estabelecimento" type="text" placeholder="Digite o nome do restaurante">
+                </div>
+                <div class="input-base">
+                    <label for="endereco" class="tds">Endereço:</label>
+                    <input id="endereco" type="text" placeholder="Informe o endereço do estabelecimento">
+                </div>
+                <div class="input-base">
+                    <label for="phone" class="tds">Telefone:</label>
+                    <input id="phone" type="text" placeholder="(00) 0000-0000">
+                </div>
+
+                <div class="container">
+                    <span class="tds">Categoria:</span>
+                    <div class="input-check">
+                        <input id="lanches" value="lanches" type="checkbox">
+                        <label for="lanches">Lanches</label>
+                    </div>
+                    <div class="input-check">
+                        <input id="pizzas" value="pizzas" type="checkbox">
+                        <label for="pizzas">Pizzas</label>
+                    </div>
+                    <div class="input-check">
+                        <input id="hamburgueres" value="hamburgueres" type="checkbox">
+                        <label for="hamburgueres">Hambúrgueres</label>
+                    </div>
+                    <div class="input-check">
+                        <input id="japonesa" value="japonesa" type="checkbox">
+                        <label for="japonesa">Japonesa</label>
+                    </div>
+                    <div class="input-check">
+                        <input id="chinesa" value="chinesa" type="checkbox">
+                        <label for="chinesa">Chinesa</label>
+                    </div>                                           
+                </div>
+                <div>
+                    <span class="tds">Faixa de Valores:</span>
+                    <select name="faixaValores" id="valores">
+                        <option value="Barato">$</option>
+                        <option value="Caro">$$</option>
+                        <option value="Muito Caro">$$$</option>
+                    </select>
+                </div>
+            </fieldset> 
+            <br>
+            <fieldset> 
+                <legend>&nbsp CONTE SUA EXPERIÊNCIA &nbsp</legend>
+                <div class="input-base">
+                    <label for="pedido" class="tds">O que pediu?</label>
+                    <input id="pedido" type="text">
+                </div>
+                <div class="input-base">
+                    <label for="valor" class="tds">Quanto foi?</label>
+                    <input id="valor" type="text" placeholder="R$ 0,00">
+                </div>
+                <div class="container">
+                    <span class="tds">Entregou rápido?</span>
+                    <div class="input-check">
+                        <input type="radio" id="yes" name="velocidade-entrega" value="Entrega Rápida">
+                        <label for="yes">Sim</label>
+                        <input type="radio" id="not" name="velocidade-entrega" value="Entrega Demorada">
+                        <label for="not">Não</label>
+                    </div>            
+                </div>
+                <div class="container-obs">
+                    <span class="tds">Observações:</span>
+                    <textarea name="obs" id="" cols="30" rows="10"></textarea>
+                </div>
+
+            </fieldset> 
+
+            <div class="btn-group">
+                <input class="btn-ghost" type="reset" value="Limpar">
+                <input class="btn-outline" type="submit" value="Recomendar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
